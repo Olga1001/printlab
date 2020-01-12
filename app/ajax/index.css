@@ -1,0 +1,240 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.product img {
+   /* width: 420px;
+    float: right;*/
+    max-width: 100%;
+}
+.caption, .input-text, .input-number {
+    text-align: center;
+}
+.constructor input::-webkit-input-placeholder {
+    line-height: 31px;
+}
+.constructor input:-moz-placeholder {
+    line-height: 31px;
+}
+.constructor input::-moz-placeholder {
+    line-height: 31px;
+}
+.constructor input:-ms-input-placeholder {
+    line-height: 31px;
+}
+.constructor textarea {
+     line-height: 16px;
+ }
+.constructor textarea::-webkit-input-placeholder {
+    line-height: 1;
+}
+.constructor textarea:-moz-placeholder {
+    line-height: 1;
+}
+.constructor textarea::-moz-placeholder {
+    line-height: 1;
+}
+.constructor textarea:-ms-input-placeholder {
+    line-height: 1;
+}
+/*Form*/
+
+.label img {
+    display: inline-block !important;
+    cursor: pointer;
+}
+
+.label span {
+    display: block;
+    color: #726969;
+    font-size: 14px;
+    padding: 0;
+    line-height: 28px;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    font-family: 'FuturaPTCondBook', sans-serif;
+}
+.label span.caption-text, .caption-text {
+    font-size: 28px;
+    padding: 0 15px 0 0;
+    text-align: left;
+    color: #726969;
+    line-height: 28px;
+    margin: 0 auto;
+    width: fit-content;
+    font-family: 'FuturaPTCondBook', sans-serif;
+    font-weight: 600;
+}
+.caption-text-print{
+    text-align: center;
+    padding: 20px 10px 5px;
+    display: block;
+
+}
+.label span.size-text {
+    width: 100%;
+    text-transform: uppercase;
+    text-align: left;
+    color: #6d6dcc;
+    font-weight: 300;
+    font-size: 16px;
+}
+#prnt-opt-mob .list-inline {
+    display: flex!important;
+    margin-top: 30px;
+}
+.sweet-color-item {
+    border-radius: 50%!important;
+}
+.back_config{
+    margin-top: -10px;
+    padding: 0 0 30px 0!important;
+}
+.price_val{
+    color: orange;
+    font-size: 33px;
+}
+.config-wrapper{
+    margin-top: 20px;
+}
+.price-row{
+    display: flex;
+    justify-content: space-between;
+}
+.color-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.size-select {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.constructor input[type="text"], input[type="tel"] {
+    display: block;
+    margin: 5px auto;
+    width: 100%;
+    height: 35px;
+    border-radius: 0;
+    border: 2px solid #333;
+    font-size: 16px;
+    line-height: 31px;
+    color: #878181;
+    font-family: 'FuturaPTLight', sans-serif;
+}
+
+.constructor input[type="radio"] {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.shirt-text {
+    font-family: "AldotheApache", sans-serif;
+    font-size: 45px;
+    top: 145px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: scale(0.75, 1);
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    height: 40px;
+}
+.type__selector {
+    margin: 40px 0 0 0;
+}
+.shirt-number {
+    position: absolute;
+    font-family: "BeTrueToYourSchool-Regular", sans-serif;
+    font-size: 165px;
+    top: 1.1em;
+    left: calc(50% - 25px);
+    right: 0;
+    transform: scale(0.75, 1) translateX(-50%);
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    line-height: 0.9em;
+    margin: 0;
+}
+.side-select {
+    z-index: 2;
+}
+.select-color {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.select-color.active {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  background-position: center;
+  background-size: cover;
+}
+
+.select-shirt.active {
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+.select-text-color {
+    transition: all 0.5s;
+}
+.select-text-color.active {
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+.select-color-print {
+    transition: all 0.5s;
+}
+.select-color-print.active{
+    transform: scale(1.3);
+    transition: all 0.5s;
+}
+
+.shirt-text span {
+    font-family: "AldotheApache", sans-serif !important;
+    font-weight: bold !important;
+}
+
+
+.size-select label {
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.select-image-block img {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    /*border: 1px dashed white;*/
+    border-radius: 10px;
+}
+
+.print-image {
+    position: absolute;
+    top: 0;
+    display: none;
+    appearance: none;
+}
+
+.select-color-print.active {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+/*
+.select-color-print {
+    width: 35px;
+    height: 35px;
+}*/

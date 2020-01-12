@@ -1,0 +1,578 @@
+@media (min-width: 1400px) {
+    .first-form {
+        width: 45%;
+        margin: 0 auto
+    }
+
+    .first-form-block .form .input-field input {
+        width: 100%
+    }
+
+    .first-form-block .form .input-field .button-sumbit {
+        width: 100%
+    }
+}
+
+@media (max-width: 1199px) {
+    .social-list-fix {
+        display: none
+    }
+    #prnt-opt-mob{
+        margin-top: -100px;
+    }
+    .form {
+        width: 100%
+    }
+
+    .shirt-number {
+        left: 43%;
+        /*font-size: 186px!important;*/
+    }
+
+    .reviews-item {
+        padding-right: 60px;
+        height: 315px
+    }
+
+    .form-block {
+        top: 50%
+    }
+    .social-block-item-inner {
+        height: 120px!important;
+        /*padding-left: 10%;*/
+    }
+    .side-select{
+        /*margin-top: 70px;*/
+    }
+    .type__selector ul {
+        top: 0;
+    }
+    .product-item{
+        position: sticky!important;
+        top: 100px;
+    }
+    .in-construct-form {
+        margin: 0;
+    }
+}
+@media (max-width: 1024px){
+    .form-constructor, .right-side-constuct {
+        background-color: #fff;
+        height: 575px;
+    }
+    #form__const > div.product.col-sm-4 > div.result-wrapper > img.print-image {
+        display: none;
+    }
+    .modal-dialog {
+        width: 50%;
+    }
+    .car-line-group-item > a {
+        height: auto;
+    }
+    .side-select label {
+        width: 90%;
+    }
+    /*tab-fix*/
+    .first-form-block .form-block {
+        text-align: center;
+        position: absolute;
+        top: 65%;
+        z-index: 20;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        top: 60%;
+    }
+    .first-form-block .form-block .form {
+        background: #fdefab;
+        padding: 15px;
+    }
+    .chevroon, .dot-line, div.form-block > div > span:nth-child(7), div.form-block > div > span:nth-child(8) {
+        display: none;
+    }
+    .form .input-field input {
+        width: 100%;
+    }
+    .form .input-field .button-sumbit {
+        width: 100%;
+    }
+    .first-form {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .owl-carousel-main-block.all-resolution {
+        display: none;
+    }
+    .owl-carousel-main-block.owl-carousel.owl-loaded.tab-resolution {
+        display: block;
+    }
+    .about-info-title h4 {
+        margin: 0;
+    }
+    .table-block h5 {
+        color: #1e1d1d;
+        font-family: 'FuturaPTCondBook';
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 20px;
+        margin: 5px;
+        width: 100%;
+    }
+    #myModal-opt .modal-dialog {
+        width: 90%;
+    }
+}
+@media (max-width: 991px) {
+    .how-we-work-item:after, .how-we-work-item:nth-child(5):after, .how-we-work-item:nth-child(3):after {
+        display: none
+    }
+
+    .first-form {
+        width: 100%;
+        margin: 0 auto
+    }
+
+    .side-select {
+        margin: 0;
+    }
+    #prnt-opt-mob{
+        margin-top: -30px;
+    }
+    .table-block table .tg-head {
+        font-size: 17px
+    }
+
+    .tg {
+        font-size: 13px
+    }
+
+    .shem {
+        width: 100%;
+    }
+    .table-responsive {
+        padding: 0 2%;
+    }
+    #sweet-special h2 {
+        margin-top: 50px;
+    }
+    .info-about-product {
+        display: none
+    }
+
+    #how-we-work p {
+        margin-top: 35px
+    }
+
+    .reviews-item {
+        padding-right: 60px;
+        height: 310px
+    }
+
+    .insta-group-item {
+        padding: 5px;
+        transition: all .5s;
+        height: 55px;
+        overflow: hidden
+    }
+
+    .insta-group {
+        border: 1px solid #e1e7eb;
+        padding-bottom: 5px;
+        margin-top: 20px
+    }
+
+    footer .header-manu ul {
+        padding-left: 40px;
+        padding-top: 0
+    }
+
+    #how-we-work .title h2, #reviews .title h2 {
+        margin: 15px auto 20px auto
+    }
+
+    .reviews-item p {
+        font-size: 18px
+    }
+
+    .side-select label {
+        width: 100%;
+    }
+    .form-constructor, .right-side-constuct {
+        background-color: #fff;
+        height: 575px;
+    }
+
+    #form__const > div.product.col-sm-4 > div.result-wrapper > img.print-image {
+        display: none;
+    }
+
+    .modal-dialog {
+        width: 50%;
+    }
+    .car-line-group-item > a {
+        height: auto;
+    }
+    .size-quanty-select label {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding-left: 25px;
+        margin-right: 5px;
+        font-size: 12px;
+        width: 90%;
+        margin-bottom: 10px;
+        margin: 0;
+        margin-bottom: 10px;
+        padding-bottom: 2px;
+    }
+    .about-info .about-info-title {
+        margin-bottom: 0;
+    }
+    #about-info-block {
+        padding-top: 0;
+    }
+    .about-images {
+        height: auto;
+    }
+    .form p {
+        margin-bottom: 0;
+    }
+    /*tab-fix*/
+    .first-form-block .form-block {
+        text-align: center;
+        position: absolute;
+        top: 65%;
+        z-index: 20;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        top: 60%;
+    }
+    .first-form-block .form-block .form {
+        background: #fdefab;
+        padding: 15px;
+    }
+    .chevroon, .dot-line, div.form-block > div > span:nth-child(7), div.form-block > div > span:nth-child(8) {
+        display: none;
+    }
+    .owl-carousel-main-block.all-resolution {
+        display: none;
+    }
+    .owl-carousel-main-block.owl-carousel.owl-loaded.tab-resolution {
+        display: block;
+    }
+    .about-info-title h4 {
+        margin: 0;
+    }
+    .table-block h5 {
+        color: #1e1d1d;
+        font-family: 'FuturaPTCondBook';
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 24px;
+        margin-bottom: 20px;
+        margin: 5px;
+        width: 100%;
+    }
+    .specials-wrap {
+        background-size: contain;
+    }
+    .form-opt-in-wrap {
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        flex-direction: column;
+    }
+    .form-opt-in-item {
+        width: 100%;
+    }
+    .footer-pay li {
+        height: 30px!important;}
+    .in-construct-form {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    /*.kollage-desktop.owl-carousel.owl-loaded {
+        display: none;
+    }
+    .kollage-mobile {
+        display: block;
+    }*/
+    .hero {
+        margin-top: 108px;
+    }
+    /*.opt-page-top-block h1 {*/
+        /*margin-top: 2%;*/
+    /*}*/
+    .opt-page-top-form-box {
+        width: 340px;
+    }
+    .about-images {
+        height: auto;
+    }
+
+    .footer-pay {
+        display: none
+    }
+
+    .mob-menu-open-button {
+        display: block;
+    }
+
+    .header-manu {
+        display: none
+    }
+
+    .jq-selectbox ul {
+        max-height: 200px !important;
+        overflow-y: scroll !important;
+    }
+
+    /*.scroll-dwn {*/
+    /*    display: none !important*/
+    /*}*/
+
+    .form-block {
+        display: none
+    }
+
+    #form__const {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column
+    }
+
+    .form-constructor {
+        order: 1
+    }
+
+    .product {
+        order: 3
+    }
+
+    .right-side-constuct {
+        order: 2
+    }
+
+    .in-construct-form {
+        order: 4;
+    }
+
+    .shem {
+        width: 100%;
+        display: inline-block
+    }
+
+    .how-we-work-item {
+        position: relative;
+        height: 200px
+    }
+
+    .reviews-item {
+        padding-right: 60px;
+        height: 320px
+    }
+
+    .insta-group-item {
+        padding: 5px;
+        transition: all .5s;
+        height: 139px;
+        overflow: hidden
+    }
+
+    .social-block-item-inner {
+        height: auto;
+        
+    }
+
+    .footer-pay li {
+        height: 90px
+    }
+
+    .shem-cons {
+        width: 100%
+    }
+
+    .shem {
+        width: 100%
+    }
+
+    #prnt-opt-mob {
+        margin: 0 auto;
+    }
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 150px
+    }
+
+    .in-construct-form {
+        width: 100%
+    }
+
+    .modal-dialog {
+        width: 90%;
+        margin: 40px auto
+    }
+
+    footer .header-manu {
+        display: none
+    }
+
+    .mobile-rewiews {
+        display: block
+    }
+
+    #reviews {
+        display: none
+    }
+
+    .product {
+        position: relative;
+        padding-top: 50px
+    }
+
+    .mobile-option-front {
+        position: absolute;
+        width: 40%;
+        padding: 5px;
+        left: 20px;
+        top: -15px;
+        z-index: 4
+    }
+
+    .mobile-option-back {
+        position: absolute;
+        width: 40%;
+        padding: 5px;
+        right: 20px;
+        top: -15px;
+        z-index: 4
+    }
+
+    .mobile-options {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-pay {
+        margin-top: 25px
+    }
+
+    .about {
+        padding-bottom: 20px
+    }
+
+    .about-info .shem {
+        margin-bottom: 0
+    }
+
+    .mob-close {
+        z-index: 999;
+        display: block
+    }
+    .owl-carousel-main-block.all-resolution {
+        display: block;
+    }
+    .owl-carousel-main-block.owl-carousel.owl-loaded.tab-resolution {
+        display: none;
+    }
+    .twice-sweet-img-box a:hover:before {
+        opacity: 0;
+    }
+    .specials-wrap {
+       padding: 15px 0;
+    }
+    .sidenav .list-inline>li {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .social-block-item-inner {
+        margin-bottom: 20px;
+    }
+    .table-responsive>.table>thead>tr>th {
+        white-space: pre-wrap!important;
+    }
+    .table-responsive .table-bordered .text-left {
+         padding-left: 0!important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .how-we-work-item {
+        position: relative;
+        height: 235px
+    }
+
+    #how-we-work p {
+        margin-top: 10px
+    }
+
+    .insta-group-item {
+        padding: 5px;
+        transition: all .5s;
+        height: 79px;
+        overflow: hidden
+    }
+
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 195px
+    }
+}
+
+@media (max-width: 480px) {
+    .social-block-item-inner {
+        padding-left: 12% !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 100px
+    }
+}
+
+@media (max-width: 400px) {
+
+    .side-select label {
+        width: 75%
+    }
+}
+
+@media (max-width: 380px) {
+
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 50px
+    }
+}
+
+@media (max-width: 360px) {
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 20px
+    }
+}
+
+@media (max-width: 340px) {
+    .side-select {
+        display: block;
+        position: relative;
+        margin-top: 0
+    }
+}

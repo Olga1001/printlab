@@ -1,0 +1,884 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+::selection
+  background-color: $accent
+  color: #fff
+  line-height: 16px
+
+*::-webkit-input-placeholder
+  color: #333333
+  font-family: "FuturaBookC", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 46px
+
+*:-moz-placeholder
+  color: #333333
+  font-family: "FuturaBookC", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 46px
+
+*::-moz-placeholder
+  color: #333333
+  font-family: "FuturaBookC", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 46px
+
+*:-ms-input-placeholder
+  color: #333333
+  font-family: "FuturaBookC", sans-serif
+  font-size: 18px
+  font-weight: 400
+  line-height: 46px
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #000000
+
+body input:required:valid,
+body textarea:required:valid
+  color: #000000
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+  text-decoration: none
+
+  &:hover
+    color: inherit
+    text-decoration: none
+
+a[href^="tel"]
+  color: inherit
+  text-decoration: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+button
+  background: none
+  border: none
+  cursor: pointer
+  outline: none
+  &:focus
+    outline: none
+input
+  outline: none
+img
+  display: block
+  width: 100%
+  height: 100%
+  object-fit: contain
+
+body
+  font-size: 14px
+  position: relative
+  line-height: normal
+  min-width: 320px
+  font-family: $default-font
+  overflow-x: hidden
+  color: $text
+
+h1.title
+  color: #ffffff
+  font-family: "FuturaBookC", sans-serif
+  font-size: 52px
+  font-weight: 400
+  line-height: 50px
+  margin-top: 40px
+  text-align: left
+
+.square
+  font-family: "FuturaBookC", sans-serif
+  color: #ff0000
+  font-size: 72px
+  line-height: 1
+  font-weight: 400
+
+h2.title-2
+  color: #000000
+  font-family: "FuturaBookC", sans-serif
+  font-size: 32px
+  font-weight: 400
+  line-height: 1
+  margin-bottom: 2px
+  text-align: left
+
+  &-span
+    font-family: "Futura-Bold", sans-serif
+    font-weight: 700
+    line-height: 1
+
+b, strong
+  font-family: "MullerNarrow-ExtraBold", sans-serif
+  font-weight: 700
+  text-decoration: underline
+  white-space: nowrap
+
+.underline
+  text-decoration: underline
+
+.text
+  color: #000000
+  font-family: "FuturaBookC", sans-serif
+  font-size: 18px
+  font-weight: 400
+.show-1199
+  display: none
+.header
+  width: 100%
+  z-index: 999
+  background: #ffffff
+  color: #000000
+  padding: 24px 0 26px!important
+  &-burger
+    width: 35px
+    height: 20px
+    padding: 3px 0
+    position: relative
+    cursor: pointer
+    display: none
+    margin: 0 15px
+    &-line
+      position: absolute
+      left: 50%
+      top: 3px
+      transform: translateX(-50%)
+      height: 2px
+      width: 23px
+      background: #000000
+      display: block
+      transition: all 0.25s ease
+    &-mid
+      top: 50%
+      transform: translate(-50%, -50%)
+    &-bottom
+      bottom: 3px
+      top: auto
+    &.active
+      .header-burger-mid
+        opacity: 0
+      .header-burger-top
+        top: 50%
+        transform: translate(-50%, -50%) rotate(135deg)
+      .header-burger-bottom
+        top: 50%
+        transform: translate(-50%, -50%) rotate(-135deg)
+  &-logo
+    text-align: right
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+    span
+      color: #000000
+      font-family: "Futura-Bold", sans-serif
+      font-weight: 700
+
+    &-top
+      position: relative
+      font-size: 12px
+      line-height: 6px
+
+      &:before
+        content: ''
+        position: absolute
+        left: -4px
+        bottom: -1px
+        background: #ff0000
+        height: 4px
+        width: 4px
+
+    &-bottom
+      font-size: 22px
+      text-transform: uppercase
+      line-height: 1
+
+  &-list
+    margin: 0 16px
+
+  &-link
+    color: #000000
+    font-family: "FuturaBookC", sans-serif
+    font-size: 14px
+    font-weight: 400
+
+
+.work
+  padding: 19px 0 55px
+
+.card
+  margin-top: 30px
+
+  &-bottom
+    background-color: #f7f7f7
+    padding: 22px
+    width: 100%
+
+  &-text
+    color: #000000
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    font-weight: 400
+    text-align: center
+    line-height: 1
+
+  &-img
+    object-fit: cover
+
+  &-top
+    position: relative
+    max-height: 260px
+    height: 100%
+    overflow: hidden
+    &-red
+      color: #ff0000
+      font-family: "UniSansHeavyCaps", sans-serif
+      font-size: 48px
+      font-weight: 700
+      position: absolute
+      left: 0
+      width: 100%
+      text-align: center
+      bottom: 22px
+      text-transform: uppercase
+
+    &-bg
+      position: absolute
+      background: linear-gradient(rgba(#000000, 0.65))
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+
+    &-number
+      position: absolute
+      right: 56px
+      bottom: 23px
+      color: #ffffff
+      font-family: "UniSansHeavyCaps", sans-serif
+      font-size: 72px
+      line-height: 1
+      display: block
+      font-weight: 700
+
+      &:before
+        content: ''
+        position: absolute
+        right: -16px
+        bottom: 10px
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        background: #ff0000
+
+    &-one
+      &:before
+        left: auto
+        right: -15px
+
+.callback
+  background: linear-gradient(rgba(#000000, 0.65)), url("../img/img-7.jpg") no-repeat center / cover
+  padding: 79px 0
+
+  .title-2
+    color: #ffffff
+
+  .btn-white
+    line-height: 42px
+    padding: 0 29px
+    margin-top: 29px
+
+.about
+  padding-top: 19px
+
+  &-icon
+    width: 100px
+    height: 100px
+    background-color: #f7f7f7
+    border-radius: 50%
+    line-height: 100px
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #000000
+    font-family: "UniSansHeavyCaps", sans-serif
+    font-size: 54px
+    font-weight: 700
+    margin: 52px auto 20px
+
+    &-img
+      height: 41px
+
+  .text
+    text-align: center
+
+.store
+  padding-top: 10px
+  &-card
+    box-shadow: 0 0 33px rgba(0, 0, 0, 0.07)
+    border: 1px solid #f7f7f7
+    background-color: #ffffff
+    padding: 15px
+    margin-top: 23px
+
+  &-img
+    background-color: #f7f7f7
+    height: 228px
+    object-fit: cover
+    margin-bottom: 15px
+
+  .btn-black
+    line-height: 40px
+    min-width: 120px
+    display: block
+    .btn-black-span
+      line-height: 40px
+  .col-xl-3, .col-lg-4, .col-6
+    padding-right: 7.5px
+    padding-left: 7.5px
+
+  .title-2
+    margin-bottom: 20px
+
+.price
+  color: #333333
+  font-family: "FuturaBookC", sans-serif
+  font-size: 24px
+  font-weight: 400
+
+.btn
+  &-black
+    text-align: center
+    position: relative
+    height: 40px
+    padding: 0 32px
+    background: #000000
+    min-width: 180px
+    display: block
+    color: #ffffff
+
+    &-span
+      color: #ffffff
+      font-family: "FuturaBookC", sans-serif
+      font-size: 16px
+      font-weight: 400
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      display: block
+      z-index: 2
+      line-height: 38px
+
+    &:after
+      content: ''
+      position: absolute
+      transition: all 0.3s ease 0s
+      background: #1ABC9C
+      z-index: 1
+      top: 0
+      left: 0
+      bottom: 0
+      right: 100%
+
+    &:hover, &:focus
+      color: #f8f8f8
+      background-color: #000000
+
+    &:hover:after, &:focus:after
+      right: 0
+
+  &-white
+    line-height: 48px
+    padding: 0 45px
+    background: #ffffff
+    color: #000000
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    font-weight: 400
+    display: block
+    width: fit-content
+    text-align: center
+    margin-top: 36px
+
+.size
+  padding-top: 17px
+
+  &-row
+    display: flex
+    flex-wrap: wrap
+
+.size .container
+  position: relative
+.constructor
+  .close
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #ffffff
+    width: 25px
+    height: 25px
+    box-sizing: content-box
+    right: -15px
+    top: 0
+    border: 1px solid #000000
+    border-radius: 50%
+    position: relative
+    &:before, &:after
+      content: none
+    span
+      line-height: 1
+      display: block
+      font-size: 20px
+  .title-2
+    margin-bottom: 20px
+  img
+    display: block
+    width: auto
+    height: auto
+    -o-object-fit: contain
+    object-fit: initial
+    appearance: none
+    margin: auto
+  .h1, .h2, .h3, h1, h2, h3
+    margin-top: 20px
+    margin-bottom: 10px
+  .shirt-number
+    margin: 0
+  input, .custom__link, label
+    text-align: center
+  .custom__link
+    display: block
+    margin: 0
+.form__const-flex
+  display: flex
+.print-image
+  display: none
+.side-select
+  label
+    margin: 5px
+    width: calc(50% - 13px)
+.size
+  &-bg
+    left: 270px
+    top: 0
+    position: absolute
+    max-width: 300px
+    width: 100%
+    margin-top: 90px
+    z-index: -1
+    &-img
+      height: 295px
+      position: absolute
+      top: 0
+      left: 0
+
+      &:nth-child(2)
+        margin: 72px 0 0 84px
+        height: 326px
+
+  &-flex
+    width: 100%
+    justify-content: flex-end
+    display: none
+    &.active
+      display: flex
+
+  &-table
+    display: flex
+    border: 1px solid #000000
+    background-color: #ffffff
+    margin-top: 40px
+    max-width: 275px
+    width: 100%
+    margin-left: 30px
+    &:first-child
+      margin-left: 0
+
+    &-col
+      width: 33.33%
+      border-right: 1px solid #000000
+      box-sizing: content-box
+      &:last-child
+        border: none
+
+    &-row
+      color: #000000
+      font-family: "FuturaBookC", sans-serif
+      font-size: 16px
+      font-weight: 400
+      text-transform: uppercase
+      display: flex
+      align-items: center
+      justify-content: center
+      border-bottom: 1px solid #000000
+      height: 41px
+
+      &:last-child
+        border-bottom: none
+
+    &-main
+      background-color: #000000
+      height: 60px
+      color: #ffffff
+      font-size: 16px
+      text-transform: inherit
+
+.review
+  padding-bottom: 40px
+  padding-top: 12px
+  &-slider
+    overflow: hidden
+    height: 100%
+    margin: 0 -15px
+
+  &-item
+    display: flex !important
+    padding: 46px 15px 58px
+    outline: none
+
+  &-img
+    box-shadow: 0 0 33px rgba(0, 1, 5, 0.11);
+    max-height: 438px
+    object-fit: cover
+
+  .slick-dots
+    bottom: 0
+
+  .slick-dots li button
+    background: #000000
+
+.info
+  display: none
+  max-width: 297px
+  width: 100%
+  &.active
+    display: block
+  &-list
+    color: #000000
+    font-family: "FuturaBookC", sans-serif
+    font-size: 16px
+    font-weight: 400
+    margin-bottom: 20px
+
+  b
+    text-decoration: none
+
+.tabs
+  display: flex
+  flex-wrap: wrap
+  max-width: 297px
+  width: 100%
+  margin-top: 40px
+
+.tab
+  width: calc(33.33% - 12px)
+  border: 1px solid #000005
+  background: #ffffff
+  line-height: 24px
+  text-align: center
+  color: #000000
+  font-family: "FuturaBookC", sans-serif
+  font-size: 14px
+  font-weight: 400
+  margin-right: 15px
+  margin-bottom: 15px
+
+  &:nth-child(3n+3)
+    margin-right: 0
+
+  &.active
+    background: #000000
+    color: #ffffff
+
+.footer
+  padding: 40px 0 20px
+  background: linear-gradient(rgba(0, 0, 0, .85)), url("../img/img-7.jpg") no-repeat center / cover
+  &-row
+    width: 100%
+  &-right
+    padding-left: 75px
+    width: 100%
+  &-menu
+    margin-left: -10px
+  &-title
+    color: #ffffff
+    font-family: "FuturaBookC", sans-serif
+    font-size: 24px
+    font-weight: 400
+    margin-bottom: 12px
+
+  .btn-white
+    line-height: 42px
+    padding: 0 29px
+    margin: 0 0 19px
+
+  &-text
+    margin-bottom: 21px
+    color: #ffffff
+    font-family: "FuturaBookC", sans-serif
+    font-size: 16px
+    font-weight: 400
+    display: block
+
+  &-copyright
+    color: #f3f5f4
+    font-family: "FuturaBookC", sans-serif
+    font-size: 14px
+    font-weight: 400
+
+  &-list
+    padding-left: 10px
+    position: relative
+    margin-bottom: 9px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      background: #ffffff
+      width: 4px
+      height: 4px
+
+  &-link
+    color: #f3f5f4
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    font-weight: 400
+    line-height: 34px
+
+    &:hover
+      color: #ffffff
+
+  &-logo
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    color: #ffffff
+    font-family: "Futura-Bold", sans-serif
+    font-size: 24px
+    font-weight: 700
+    line-height: 1
+    padding-right: 10px
+    &:hover
+      color: #ffffff
+    &-top
+      position: relative
+      width: fit-content
+      line-height: 19px
+
+      &:before
+        content: ''
+        position: absolute
+        left: -6px
+        bottom: 0
+        background: #ff0000
+        width: 6px
+        height: 6px
+
+    &-bottom
+      font-size: 42px
+      text-transform: uppercase
+
+  &-social
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 5px
+    padding-right: 10px
+
+    &-text
+      color: #f3f5f4
+      font-family: "FuturaBookC", sans-serif
+      font-size: 15px
+      font-weight: 400
+      line-height: 1
+      margin-right: 5px
+
+    &-link
+      width: 24px
+      height: 24px
+      margin-left: 10px
+      display: block
+
+  &-contacts
+    padding: 0 25px
+    margin-bottom: 15px
+
+    &-text
+      color: #f3f5f4
+      font-family: "FuturaBookC", sans-serif
+      font-size: 21px
+      font-weight: 400
+      text-align: center
+
+.yellow
+  color: #ffe400
+  &:hover
+    color: #ffe400
+
+.slider
+  &-item
+    background: linear-gradient(rgba(#000000, 0.65)), url("../img/offer-img.jpg") no-repeat center / cover
+    height: 596px
+    width: 100%
+
+.slick-dots
+  position: absolute
+  left: 50%
+  bottom: 38px
+  transform: translateX(-50%)
+  display: flex
+  outline: none
+
+  li
+    width: 10px
+    height: 20px
+    margin: 0 5px
+    padding: 5px 0
+
+    button
+      outline: none
+      width: 100%
+      height: 100%
+      padding: 0
+      background-color: #ffffff
+      color: transparent
+
+  li.slick-active
+    button
+      background-color: #ff0000
+.close
+  background: #000000
+  width: 13px
+  height: 13px
+  position: absolute
+  right: 10px
+  top: 10pxprnt-opt-mob
+  cursor: pointer
+  opacity: 1
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    background: #ffffff
+    height: 1px
+    width: 9px
+    transform: translate(-50%, -50%) rotate(45deg)
+  &:after
+    width: 1px
+    height: 9px
+.popup
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(#000000, 0.6)
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 9999
+  padding: 15px
+  opacity: 0
+  pointer-events: none
+  transition: all 0.25s ease
+  &.active
+    opacity: 1
+    pointer-events: auto
+.form
+  background-color: #ffffff
+  border-radius: 2px
+  padding: 20px 15px 30px
+  max-width: 320px
+  width: 100%
+  position: relative
+  &-title
+    color: #333333
+    font-family: "FuturaBookC", sans-serif
+    font-size: 24px
+    font-weight: 400
+    line-height: 1
+    margin-bottom: 23px
+    text-align: center
+  &-input
+    border: 1px solid #020401
+    background-color: #ffffff
+    padding: 0 20px
+    line-height: 46px
+    color: #000000
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    font-weight: 400
+    display: block
+    margin-bottom: 15px
+    width: 100%
+  &-btn
+    width: 100%
+    line-height: 48px
+    color: #ffffff
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    background: #000000
+    font-weight: 400
+.config-color-print
+  margin-top: -30px
+.sweet-color-item
+  margin: 3px
+#form__const
+  display: flex
+  flex-wrap: wrap
+#prnt-opt-mob
+  height: auto
+  padding: 0 15px 30px 15px
+  .list-inline
+    display: inline-block
+  .title-2
+    margin-top: 0
+.jq-selectbox ul
+  max-height: 300px
+  height: 100%
+.show-768
+  display: none
+@import "media"
+// Always at the end

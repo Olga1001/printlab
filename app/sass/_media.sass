@@ -1,0 +1,285 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .header
+    //position: fixed
+    top: 0
+    left: 0
+  .header-menu-nav
+    position: fixed
+    top: 90px
+    left: 0
+    width: 100%
+    z-index: 1
+    display: none
+    pointer-events: none
+  .header-menu
+    background: #ffffff
+    border-top: 1px solid #000000
+    display: block
+    padding: 10px 0
+    pointer-events: auto
+  .header-link
+    width: 100%
+    text-align: center
+    display: block
+    padding: 10px 15px
+  .header-burger
+    display: block
+  .slider-item
+    height: 500px
+  .footer
+    padding: 40px 0
+  .footer-right
+    padding-left: 0
+    margin-top: 25px
+  .footer-col
+    width: calc(50% - 15px)
+    margin-right: 15px
+  .footer-logo
+    width: fit-content
+  .footer-social
+    justify-content: flex-start
+  .footer-contacts
+    padding: 0
+  .footer-menu
+    margin: 0
+  .size-bg
+    left: 185px
+  .size-bg-img:nth-child(2)
+    margin: 70px 0 0 40px
+  #prnt-opt-mob
+    margin-top: -100px
+  .review-img
+    max-height: 495px
+  #prnt-opt-mob
+    padding: 30px 0
+    .title-2
+      margin-top: 20px
+// ≥992px
++media-breakpoint-down(md)
+  .size-flex
+    justify-content: flex-start
+  .size-bg
+    left: 270px
+  .size-table
+    margin-left: 10px
+  .product-item
+    position: inherit!important
+    top: 0
+  .side-select
+    margin: 0 auto
+  #prnt-opt-mob
+    margin-top: 0
+  .result-wrapper
+    margin: -50px auto
+  .config-wrapper
+    margin-top: -75px
+  .type__selector
+    margin: 0 auto
+// ≥768px
++media-breakpoint-down(sm)
+  .footer-col
+    width: 100%
+    margin-bottom: 25px
+  .footer-link
+    font-size: 16px
+  .footer-contacts-text
+    text-align: left
+  .footer-list
+    margin-bottom: 0
+  .footer-contacts-text
+    font-size: 18px
+  h1.title
+    font-size: 36px
+    line-height: 40px
+  .btn-black
+    height: 35px
+    padding: 0 15px
+  .btn-black-span
+    font-size: 14px
+    line-height: 33px
+  .price
+    font-size: 16px
+  .size-bg
+    left: auto
+    right: 0
+  .card-top-number
+    right: 35px
+    font-size: 50px
+  .card-top-number:before
+    right: -12px
+    bottom: 7px
+    width: 10px
+    height: 10px
+  .card-top-red
+    font-size: 40px
+  .conse-block
+    padding-top: 0
+  .review
+    overflow: hidden
+  .review-img
+    max-height: 100%
+    object-fit: contain
+    margin: 0
+  .header
+    padding: 20px 0!important
+  .header-menu-nav
+    top: 75px
+  #prnt-opt-mob
+    padding: 10px 0 30px
+  #sad
+    display: flex
+    flex-wrap: wrap
+    max-height: 225px
+    margin-bottom: 20px
+    padding: 0 10px 10px
+    height: 100%
+  .select-print-block div
+    width: 46px
+    height: 60px
+    margin: 5px
+    img
+      object-fit: contain
+  .constructor
+    .close
+      display: block
+  .price-row
+    flex-wrap: wrap
+    .constructor .custom__link, .mobile-options
+      width: 100%
+      margin-top: 10px
+  .show-768
+    display: flex
+  .hide-768
+    display: none!important
+  .product-item
+    padding: 0
+  #form__const
+    display: block
+@media only screen and (max-width : 576px)
+  .size-bg-img:nth-child(2)
+    margin-left: 0
+  .constructor .custom__link
+    width: 100%
+// ≥576px
++media-breakpoint-down(xs)
+  .price-row
+    justify-content: flex-end
+  .size-table
+    max-width: 100%
+    margin: 10px 0
+  .size-flex
+    flex-wrap: wrap
+  .result-wrapper
+    margin-top: -30px
+  .config-wrapper
+    margin-top: 40px
+  .size-bg-img:nth-child(2)
+    margin-left: 0
+  h1.title
+    font-size: 40px
+    line-height: 45px
+    margin-top: 10px
+  .slider-item
+    height: 400px
+  .slick-dots
+    bottom: 20px
+  h1.title
+    font-size: 26px
+    line-height: 32px
+    margin-bottom: 20px
+  .btn-white
+    padding: 0 30px
+    line-height: 40px
+    font-size: 16px
+  h2.title-2
+    font-size: 26px
+  .about-icon
+    width: 60px
+    height: 60px
+  .about-icon-img
+    height: 25px
+  .text
+    font-size: 14px
+  .size-bg
+    display: none
+  .tabs, .info
+    width: 100%
+    max-width: 100%
+  .header-logo-bottom
+    font-size: 18px
+  .header
+    .btn-black
+      display: none
+  .card
+    margin-top: 20px
+  .type__selector--icon span
+    width: 60px
+    height: 60px
+  .shirt-number
+    //top: 42vw!important
+  .shirt-text
+    //top: -67vw!important
+  .tabs
+    margin-top: 20px
+  .header-menu-nav
+    top: 62px
+  .store-img
+    height: 71.25vw
+  .card-top-number:before
+    bottom: 12px
+
+@media only screen and (max-width : 420px)
+  .shirt-text
+    top: 34.5vw
+    font-size: 10.71vw
+  .shirt-number
+    font-size: 33.33vw
+    top: 52.38vw!important
+  .result-wrapper
+    height: 111.9vw
+  #prnt-opt-mob
+    padding: 0 0 10px 0
+    h2.title-2
+      font-size: 20px
+      margin-top: 0
+  .type__selector ul
+    display: flex
+    flex-wrap: wrap
+  li.type__selector--icon
+    margin: 0 auto
+    span
+      margin: 0 auto
+      display: block
+  #prnt-opt-mob .list-inline
+    display: block!important
+  .form-constructor.mob-option, .right-side-constuct.mob-option
+    padding: 10px
+  .select-print-block div
+    width: 44px
+    margin: 4px
+  .label span.caption-text, .caption-text
+    padding: 10px 0
+  #sad
+    max-height: 200px
+  .color-list
+    justify-content: center
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
